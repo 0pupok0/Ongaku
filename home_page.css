@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "A";
+    src: local("A"),
+      url(fonts/A.woff)
+      format("truetype");}
+.header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-content: center;
+    height: 70px;
+    top: 0px;
+    width:100%;
+    border-bottom: 5px rgb(0, 0, 0) solid;
+    background-color: white;
+}
+.body{
+    margin-top: 70px;
+}
+.logo {
+    margin-top: -40px;
+    overflow: hidden;
+}
+.tabs {
+    align-self: center;
+}
+.tab {
+    margin-right: 15px;
+}
+.card {
+    height: px;
+    background-image: url("assets/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: left;
+  }
+  .card__title{
+    color: white;
+    margin-left: 60%;
+    align-self: center;
+    margin-right: 30px;
+    font-size: 32px;
+    white-space: nowrap;
+  }
+  .headlines{
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  .text-content{
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  .subtext{
+    font-size: 20px;
+  }

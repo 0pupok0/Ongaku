@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "A";
+    src: local("A"),
+      url(fonts/A.woff)
+      format("truetype");}
+.header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-content: center;
+    height: 70px;
+    top: 0px;
+    width:100%;
+    border-bottom: 5px rgb(0, 0, 0) solid;
+    background-color: white;
+}
+.logo {
+    margin-top: -40px;
+    overflow: hidden;
+}
+.tabs {
+    align-self: center;
+}
+.tab {
+    margin-right: 15px;
+}
+.catalog{
+    height: 250px;
+    margin-bottom: 30px;
+}
+.category{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+.cat {
+    display: flex;
+    font-family: A; font-weight: light;
+    flex-direction: column;
+    border: 5px black solid;
+    padding: 10px;
+    padding-bottom: 60px;
+    font-size: 27px;
+
+}

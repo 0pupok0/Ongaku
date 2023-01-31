@@ -1,0 +1,13 @@
+.organization{
+    text-align: center;
+    font-weight: bold;
+}
+.subject{
+    margin-top: 100px;
+    text-align: center;
+}
+.signature{
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 80%;
+}
