@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "A";
+    src: local("A"),
+      url(fonts/A.woff)
+      format("truetype");}
+
+.header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-content: center;
+    height: 70px;
+    top: 0px;
+    width:100%;
+    border-bottom: 5px rgb(0, 0, 0) solid;
+    background-color: white;
+}
+.body{
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+.logo {
+    margin-top: -40px;
+    overflow: hidden;
+}
+.tabs {
+    align-self: center;
+}
+.tab {
+    margin-right: 15px;
+}
+.backBtn {
+    color: gray;
+    margin-left: 1vw;
+    position: fixed;
+    background-color: white;
+    border: 1px solid black;
+    padding:5px;
+}
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 25px;
+    width: 80vw;
+}
+.item-header {
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+}
+a {
+    color: rgb(150, 20, 60);
+     position: relative;
+      cursor: pointer;
+      text-decoration: none;
+  }
+  a::after {
+    content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px;
+      background-color: rgb(200, 200, 200);
+      transition: width 0.5s;
+  }
+  a:hover::after {
+    content: "";
+      width: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      height: 2px; 
+      background-color: rgb(150, 20, 60); 
+      transition: width 0.5s;
+  }
+.item-body {
+    display: flex;
+    flex-direction: row;
+    text-align: center; 
+    justify-content: flex-start;
+    vertical-align: middle; 
+    align-items: center; 
+}
+.item-img {
+    height: 150px;
+    margin-right: 40px;
+}

@@ -35,6 +35,40 @@
     padding: 20px;
     text-align: center;
 }
+.tab {
+    color: rgb(150, 20, 60);
+     position: relative;
+      cursor: pointer;
+      text-decoration: none;
+  }
+  .tab-chosen {
+    color: rgb(150, 20, 60);
+      cursor: pointer;
+      text-decoration: none;
+      margin-right: 15px;
+  }
+.tab::after {
+    content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px;
+      background-color: rgb(200, 200, 200);
+      transition: width 0.5s;
+  }
+.tab:hover::after {
+    content: "";
+      width: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      height: 2px; 
+      background-color: rgb(150, 20, 60); 
+      transition: width 0.5s;
+  }
 .cat {
     display: flex;
     font-family: A; font-weight: light;
@@ -43,5 +77,18 @@
     padding: 10px;
     padding-bottom: 60px;
     font-size: 27px;
-
+    color: black;
+    transition: 300ms linear;
+    text-decoration: none;
+}
+.cat:hover {
+    color:rgb(150, 20, 60);
+    text-decoration: none;
+}
+.catlink {
+    text-decoration: none;
+}
+.catlink:hover {
+    color:rgb(150, 20, 60);
+    text-decoration: none;
 }

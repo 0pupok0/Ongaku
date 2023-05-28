@@ -3,22 +3,28 @@
  <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="catalog.css" type="text/css"/>
-    <title>Document</title>
+    <link rel="icon" href="assets/logo.jpg"/>
+    <title>Каталог</title>
  </head>
  <body style="margin:0px; font-family: A; font-weight: light;">
     <div>
-        <div class = "header"><div class="logo"><img src="assets/logo.jpg" height="150px"></div>
+        <div class = "header"><div class="logo"><a href="./home_page.html"><img src="assets/logo.jpg" height="150px"></a></div>
         <div class = "tabs">
-            <a class = "tab" style="color:crimson">Каталог</a>
-            <a class = "tab">О нас</a>
-            <a class = "tab">Поддержка</a>
+            <a class = "tab-chosen" style="color:crimson">Каталог</a>
+            <a href="./about.html"  class = "tab">О нас</a>
+            <a href="./support.html" class = "tab">Поддержка</a>
         </div>
      </div>
     </div>
     <div class="category">
-        <div class="cat"><img class="catalog" src ="assets/piano.jpg"> Фортепиано </div>
-        <div class="cat"><img class="catalog" src ="assets/guitar.jpg"> Гитары </div> 
-        <div class="cat"><img class="catalog" src ="assets/violin.jpg"> Скрипки </div>
+        <a class="catlink" href="./piano.html">
+            <div class="cat">
+                <img class="catalog" src ="assets/piano.jpg"> 
+                Фортепиано 
+            </div>
+        </a>
+        <a class="catlink" href="./guitar.html"><div class="cat"><img class="catalog" src ="assets/guitar.jpg"> Гитары </div> </a>
+        <a class="catlink" href="./violin.html"><div class="cat"><img class="catalog" src ="assets/violin.jpg"> Скрипки </div></a>
     </div>
  </body>
  </html>

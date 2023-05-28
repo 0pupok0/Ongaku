@@ -16,6 +16,7 @@
 }
 .body{
     margin-top: 70px;
+    padding-bottom: 20px;
 }
 .logo {
     margin-top: -40px;
@@ -24,11 +25,39 @@
 .tabs {
     align-self: center;
 }
+a {
+  color: rgb(150, 20, 60);
+   position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+a::after {
+  content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(200, 200, 200);
+    transition: width 0.5s;
+}
+a:hover::after {
+  content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; 
+    background-color: rgb(150, 20, 60); 
+    transition: width 0.5s;
+}
 .tab {
     margin-right: 15px;
 }
 .card {
-    height: px;
+    height: 500px;
     background-image: url("assets/background.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -55,3 +84,35 @@
   .subtext{
     font-size: 20px;
   }
+  .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 25px;
+    width: 25vw;
+}
+.item-header {
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+}
+.item-body {
+  display: flex;
+  flex-direction: row;
+  text-align: center; 
+  justify-content: flex-start;
+  vertical-align: middle; 
+  align-items: center; 
+}
+.item-img {
+  height: 150px;
+  margin-right: 40px;
+}
